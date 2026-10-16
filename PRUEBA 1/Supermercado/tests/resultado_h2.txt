@@ -1,0 +1,111 @@
+MOTOR: H2 2.3.232 (2024-08-11)
+OK 1 - Creacion de las 9 tablas y sus indices
+OK 2 - Cliente crear [Guardado exitosamente Nombre: Cliente prueba | Telefono: 55550001 | Direccion: Zona 1]
+OK 3 - Cliente leer
+OK 4 - Cliente modificar [Modificado exitosamente Nombre: Cliente editado | Telefono: 55550002 | Direccion: Zona 2]
+OK 5 - Cliente cambios persistidos
+OK 6 - Empleado crear [Guardado exitosamente Nombre: Cajero prueba | Telefono: 55550003 | Puesto: Caja]
+OK 7 - Empleado leer
+OK 8 - Empleado modificar [Modificado exitosamente Nombre: Empleado editado | Telefono: 55550004 | Puesto: Supervisor]
+OK 9 - Empleado cambios persistidos
+OK 10 - Pedido crear [Guardado exitosamente]
+OK 11 - Pedido leer
+OK 12 - Pedido modificar [Modificado exitosamente]
+OK 13 - Pedido cambios persistidos
+OK 14 - Cliente relacionado protegido [No se puede eliminar: el cliente tiene pedidos asociados]
+OK 15 - Producto crear [Guardado exitosamente]
+OK 16 - Producto leer
+OK 17 - Producto modificar [Modificado exitosamente]
+OK 18 - Producto cambios persistidos
+OK 19 - Servicio crear [Guardado exitosamente]
+OK 20 - Servicio leer
+OK 21 - Servicio modificar [Modificado exitosamente]
+OK 22 - Servicio cambios persistidos
+OK 23 - Abastecimiento crear [Abastecimiento registrado]
+OK 24 - Abastecimiento leer y stock
+OK 25 - Abastecimiento modificar [Modificado exitosamente]
+OK 26 - Abastecimiento cambios persistidos y diferencia de stock
+OK 27 - Venta crear [Venta creada en estado PENDIENTE]
+OK 28 - Venta leer
+OK 29 - Venta modificar [Modificado exitosamente]
+OK 30 - Venta cambios persistidos
+OK 31 - Venta eliminar pendiente [Eliminado exitosamente]
+OK 32 - Venta eliminacion persistida
+OK 33 - Venta nueva para detalles [Venta creada en estado PENDIENTE]
+OK 34 - Detalle rechazado en venta pendiente [La venta debe estar EN PROCESO]
+OK 35 - Rechazo sin cambios de stock y total
+OK 36 - Iniciar venta [Modificado exitosamente Estado: EN PROCESO]
+OK 37 - Venta sin productos no finaliza [No se puede finalizar una venta sin productos]
+OK 38 - Producto vendido crear [Producto agregado a la venta]
+OK 39 - Producto vendido leer y efectos
+OK 40 - Producto vendido modificar [Modificado exitosamente]
+OK 41 - Detalle cambios persistidos, stock y total
+OK 42 - Servicio realizado crear [Servicio agregado a la venta]
+OK 43 - Servicio realizado leer y total
+OK 44 - Servicio realizado modificar [Modificado exitosamente]
+OK 45 - Servicio realizado cambios persistidos y total
+OK 46 - Servicio realizado eliminar [Eliminado exitosamente]
+OK 47 - Servicio realizado eliminacion persistida y total
+OK 48 - Stock insuficiente al crear [No hay existencia suficiente]
+OK 49 - Stock insuficiente al editar [No hay existencia suficiente]
+OK 50 - Rollback de detalle sin alterar cantidades
+OK 51 - Abastecimiento no se borra si stock quedaria negativo [No se puede eliminar: la existencia quedaria negativa]
+OK 52 - Abastecimiento no se reduce bajo consumo [No se puede modificar: la existencia quedaria negativa]
+OK 53 - Rollback de abastecimiento
+OK 54 - Producto vendido eliminar [Eliminado exitosamente]
+OK 55 - Detalle eliminacion persistida y devolucion de stock
+OK 56 - Servicio eliminar [Eliminado exitosamente]
+OK 57 - Servicio eliminacion persistida
+OK 58 - Abastecimiento eliminar [Eliminado exitosamente]
+OK 59 - Abastecimiento eliminacion persistida y stock
+OK 60 - Producto eliminar [Eliminado exitosamente]
+OK 61 - Producto eliminacion persistida
+OK 62 - Venta iniciada protegida frente a borrado [Solo se pueden eliminar ventas PENDIENTES sin movimientos]
+OK 63 - Cancelar venta vacia [Modificado exitosamente Estado: CANCELADA]
+OK 64 - Pedido independiente crear [Guardado exitosamente]
+OK 65 - Pedido eliminar [Eliminado exitosamente]
+OK 66 - Pedido eliminacion persistida
+OK 67 - Empleado independiente crear [Guardado exitosamente Nombre: Temporal | Telefono: 55550005 | Puesto: Caja]
+OK 68 - Empleado eliminar [Eliminado exitosamente]
+OK 69 - Empleado eliminacion persistida
+OK 70 - Cliente independiente crear [Guardado exitosamente Nombre: Temporal | Telefono: 55550006 | Direccion: Zona 3]
+OK 71 - Cliente eliminar [Eliminado exitosamente]
+OK 72 - Cliente eliminacion persistida
+OK 73 - Cliente inexistente modificar [El registro no existe]
+OK 74 - Cliente inexistente eliminar [El registro no existe]
+OK 75 - Empleado inexistente modificar [El registro no existe]
+OK 76 - Empleado inexistente eliminar [El registro no existe]
+OK 77 - Pedido inexistente modificar [El registro no existe]
+OK 78 - Pedido inexistente eliminar [El registro no existe]
+OK 79 - Producto inexistente modificar [El registro no existe]
+OK 80 - Producto inexistente eliminar [El registro no existe]
+OK 81 - Servicio inexistente modificar [El registro no existe]
+OK 82 - Servicio inexistente eliminar [El registro no existe]
+OK 83 - Venta inexistente eliminar [La venta no existe]
+OK 84 - Cantidad cero rechazada [La cantidad debe ser mayor que cero]
+OK 85 - Precio negativo rechazado [El precio no puede ser negativo]
+OK 86 - Costo negativo rechazado [El costo no puede ser negativo]
+OK 87 - FK abastecimiento rechaza producto inexistente
+OK 88 - FK fallida no deja abastecimiento
+OK 89 - FK impide borrar empleado con venta
+OK 90 - FK impide borrar pedido con venta
+OK 91 - Codigo pedido duplicado rechazado
+OK 92 - Producto para cancelacion [Guardado exitosamente]
+OK 93 - Stock para cancelacion [Abastecimiento registrado]
+OK 94 - Venta para cancelacion [Venta creada en estado PENDIENTE]
+OK 95 - Iniciar venta cancelable [Modificado exitosamente Estado: EN PROCESO]
+OK 96 - Detalle cancelable [Producto agregado a la venta]
+OK 97 - Cancelar con productos [Modificado exitosamente Estado: CANCELADA]
+OK 98 - Cancelacion devuelve stock
+OK 99 - Cancelacion repetida rechazada [Esta venta ya no se puede cancelar]
+OK 100 - No se duplica devolucion
+OK 101 - Venta para finalizar [Venta creada en estado PENDIENTE]
+OK 102 - Iniciar venta final [Modificado exitosamente Estado: EN PROCESO]
+OK 103 - Detalle venta final [Producto agregado a la venta]
+OK 104 - Finalizar sin servicios [Modificado exitosamente Estado: FINALIZADA]
+OK 105 - Finalizacion guarda fecha, stock y total
+OK 106 - Detalle finalizado no editable [La venta debe estar EN PROCESO]
+OK 107 - Detalle finalizado no eliminable [La venta debe estar EN PROCESO]
+OK 108 - Venta finalizada no editable [La venta ya no se puede modificar]
+OK 109 - Datos finales conservados
+RESULTADO: 109 comprobaciones aprobadas; CRUD de las 9 entidades probado. Sin prueba visual de Swing ni del servidor HTTP de reportes.

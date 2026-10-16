@@ -1,0 +1,96 @@
+Oct 15, 2026 6:46:35 AM supermercado.Conexion mensaje
+SEVERE: null
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_FD0: PUBLIC.ABASTECIMIENTO FOREIGN KEY(ID_REPUESTO) REFERENCES PUBLIC.REPUESTO(ID_REPUESTO) (CAST(-1 AS DECFLOAT))"; SQL statement:
+insert into abastecimiento (id_repuesto, cantidad, fecha) values (?, ?, sysdate) [23506-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:308)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:249)
+	at org.h2.table.Table.fireConstraints(Table.java:1227)
+	at org.h2.table.Table.fireAfterRow(Table.java:1245)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at model.AbastecimientoModel.insertar(AbastecimientoModel.java:73)
+	at controller.AbastecimientoController.insertar(AbastecimientoController.java:18)
+	at CrudIntegrationTest.main(CrudIntegrationTest.java:167)
+
+Oct 15, 2026 6:46:35 AM supermercado.Conexion mensaje
+SEVERE: null
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_47F: PUBLIC.ORDEN FOREIGN KEY(ID_MECANICO) REFERENCES PUBLIC.MECANICO(ID_MECANICO) (CAST(1 AS DECFLOAT))"; SQL statement:
+delete from mecanico where id_mecanico = ? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:362)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:379)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:253)
+	at org.h2.table.Table.fireConstraints(Table.java:1227)
+	at org.h2.table.Table.fireAfterRow(Table.java:1245)
+	at org.h2.command.dml.Delete.update(Delete.java:92)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at model.EmpleadoModel.eliminar(EmpleadoModel.java:100)
+	at controller.EmpleadoController.eliminar(EmpleadoController.java:38)
+	at CrudIntegrationTest.main(CrudIntegrationTest.java:169)
+
+Oct 15, 2026 6:46:35 AM supermercado.Conexion mensaje
+SEVERE: null
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "CONSTRAINT_47: PUBLIC.ORDEN FOREIGN KEY(ID_VEHICULO) REFERENCES PUBLIC.VEHICULO(ID_VEHICULO) (CAST(1 AS DECFLOAT))"; SQL statement:
+delete from vehiculo where id_vehiculo = ? [23503-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:362)
+	at org.h2.constraint.ConstraintReferential.checkRowRefTable(ConstraintReferential.java:379)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:253)
+	at org.h2.table.Table.fireConstraints(Table.java:1227)
+	at org.h2.table.Table.fireAfterRow(Table.java:1245)
+	at org.h2.command.dml.Delete.update(Delete.java:92)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at model.PedidoModel.eliminar(PedidoModel.java:171)
+	at controller.PedidoController.eliminar(PedidoController.java:44)
+	at CrudIntegrationTest.main(CrudIntegrationTest.java:170)
+
+Oct 15, 2026 6:46:35 AM supermercado.Conexion mensaje
+SEVERE: null
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_A6 ON PUBLIC.VEHICULO(PLACA NULLS LAST) VALUES ( /* 1 */ 'PED-002' )"; SQL statement:
+insert into vehiculo (id_cliente, placa, marca, modelo, anio, color) values (?, ?, ?, ?, ?, ?) [23505-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:523)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:517)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:213)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:172)
+	at model.PedidoModel.insertar(PedidoModel.java:99)
+	at controller.PedidoController.insertar(PedidoController.java:22)
+	at CrudIntegrationTest.main(CrudIntegrationTest.java:171)
+

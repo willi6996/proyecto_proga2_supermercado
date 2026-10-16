@@ -1,0 +1,2 @@
+# Copiar como database-test.properties y poner la clave del usuario de pruebas.
+db.password=
